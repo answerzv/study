@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+
+    .box{
+        width: 30vw;
+        height: 30vw;
+        margin: 1vw;
+        background-color: hsl(180, 100%, 27%);
+        border-radius: 2vw;
+    }
+}
+
+
+
+.btn{
+    width: 100%;
+   
+    .btn__start{
+        background-color: darkgray;
+        margin: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 11vw;
+        font-size: 4vw;
+    }
+    .btn__cancel{
+        @extend .btn__start
+    }
+}
+
+
+
+
+
