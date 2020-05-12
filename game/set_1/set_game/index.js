@@ -13,7 +13,7 @@ var sum = document.getElementById('sum');
 
 function onChangeHandler(val){
     if(val < 4){
-        this.alert('亲,玩家数量太少了');
+        this.alert('亲，玩家数量太少了');
         sum.value = '';
     }else if(val > 18){
         this.alert('亲，玩家数量太多了');
