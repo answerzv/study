@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src=".././../../node_modules/vue/dist/vue.js"></script> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        [v-cloak] {        /* 解决{{}}语法网速慢出现闪现问题 */
+          display: none;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nav__img1"></li>
+            <li class="nav__title">参数设置</li>
+            <li class="nav__img2"></li>
+        </ul>
+    </header>
+    <main>
+        <div class="content">
+            <div class="conten__match">玩家配比</div>
+            <div class="conten__set">
+                <div>幽灵<input id="vle_civil" value="" type="text" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')">人</div>
+                <div>水民<input id="vle_ghost" value=""  type="text" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')">人</div>
+            </div>
+            <div class="conten__input">
+                <div class="inputMain">
+                    <div class="inputMain__role">
+                        <p>水民词组&nbsp;:</p>
+                        <input type="text" maxlength="12">
+                    </div>
+                    <div class="inputMain__role">
+                        <p>幽灵词组&nbsp;:</p>
+                        <input type="text" maxlength="12">
+                    </div>
+                </div>
+            </div>
+            <div class="conten__amount">
+               <div>玩家人数<input onchange="onChangeHandler(this.value)" id="sum" type="text" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')"><span>玩家数量为4-18</span></div><!--slider-btn-->
+               <div id='app' class="slider">
+                 <div id="reduce"  class="slider-btnPlus" v-cloak>{{reduce}}</div>
+                 <input id="processRange" 
+                 class="progress" 
+                 type="range" 
+                 :value="processPoint" 
+                 :max ="duration" 
+                 min ="4" 
+                 step="1" 
+                 @input = "changeProcess();" 
+                 style="width: 75%;margin-bottom:3px;" 
+                 :style="{background: '-webkit-linear-gradient(top, #fff, #fff) 0% 0% / '+ processPoint*100/duration +'% 100% no-repeat'}"
+                 oninput=''>
+                 <div id="plus"   type='button'  class="slider-btnReduce" v-cloak>{{plus}}</div>
+            </div> <!--#059CFA-->
+            </div>
+            <footer>
+                <div class="button" >去发牌</div>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+         new Vue({
+            el:'#app',
+            data:{
+               reduce:'-',
+               plus:'+',
+               processPoint:0,
+               duration:'18'
+            },
+            methods:{
+               changeProcess:function(){
+                   var range = document.getElementById('processRange');
+                   this.processPoint =range.value;
+                //    console.log(range.value);
+                   let data = range.value
+                   sessionStorage.setItem("lastname", data);
+               }
+            }
+        })
+    </script>
+    <script src="./index.js"></script>
+
+</html>

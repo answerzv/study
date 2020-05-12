@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px; }
+
+body {
+  background-color: #f0f0f0; }
+
+.nav {
+  width: 100%;
+  height: 3.7rem;
+  background-color: #1393b2;
+  display: flex;
+  align-items: center; }
+  .nav .btnMain {
+    margin-left: 0.45rem; }
+    .nav .btnMain .btnMain__box {
+      width: 2.5rem;
+      height: 0.26rem;
+      background: wheat;
+      margin-left: 0.45rem;
+      margin-top: 0.4rem; }
+
+.main {
+  background-color: #f0f0f0; }
+  .main .main__header {
+    width: 86%;
+    height: 5.5rem;
+    background-color: white;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .main__header p {
+      font-size: 1.2rem;
+      color: #D5D5D7;
+      letter-spacing: 3.85px; }
+  .main .main__content {
+    width: 86%;
+    height: 45rem;
+    background-color: white;
+    margin: 2rem auto; }
+    .main .main__content .contentText {
+      height: 3.5rem;
+      border-bottom: 0.1rem solid #F4CF07;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2.85px;
+      color: #F4CF07; }
+    .main .main__content .contentBtn_1, .main .main__content .contentBtn_2, .main .main__content .contentBtn_3 {
+      width: 80%;
+      height: 6rem;
+      margin: 4.5rem auto 0 auto;
+      background-color: #1393b2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: wheat;
+      font-size: 1.2rem; }
+    .main .main__content .palyed_text {
+      margin-top: 0.8rem;
+      text-align: center; }
+    .main .main__content .triangle_1, .main .main__content .triangle_2 {
+      width: 0;
+      height: 0;
+      border-top: 0.8rem solid transparent;
+      border-left: 1rem solid #fbb435;
+      border-bottom: 0.8rem solid transparent;
+      position: absolute;
+      margin-right: 5px;
+      top: 35.8rem;
+      right: 7.8%; }
+    .main .main__content .triangle_2 {
+      border-left: 0;
+      border-right: 1rem solid #fbb435;
+      left: 7.8%; }

@@ -1,4 +1,5 @@
 var startBtn = document.getElementsByClassName('box');
+var startBtns = Array.prototype.slice.call(startBtn);
 
 
 var times = 0;
@@ -24,9 +25,22 @@ function startColor(){
 function myFunction(){
     
     timer=setInterval(() => {
-        var one = startBtn[Math.floor(Math.random()*startBtn.length)];
-        var two = startBtn[Math.floor(Math.random()*startBtn.length)];
-        var three = startBtn[Math.floor(Math.random()*startBtn.length)];
+       var arr = startBtns;
+       var result = [];
+       
+        for(var i = 0; i < 3; i++){
+            var boxMain = Math.floor(Math.random()*arr.length );
+            if(result.includes(arr[boxMain])){ 
+                var boxMain = Math.floor(Math.random()*arr.length );
+                console.log('avoid probability')
+            }
+            result.push(arr[boxMain]);
+            
+           
+        }
+        
+        console.log(result)
+        var [ one , two , three] = result
         var arr = [];
         for(let i = 0; i < 3; i++){
             var obj = startColor()
