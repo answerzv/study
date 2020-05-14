@@ -58,7 +58,8 @@ footer {
     align-items: center; }
 
 body {
-  background-color: #1393b2; }
+  background-color: #1393b2;
+  line-height: 21rem; }
 
 header {
   border-bottom: 0.8px solid #f0f0f0; }
@@ -88,4 +89,9 @@ header {
 footer {
   margin-top: 47rem;
   height: 8rem;
-  z-index: 999; }
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1393b2; }
