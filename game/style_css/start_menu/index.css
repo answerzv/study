@@ -129,3 +129,24 @@ body {
           border-right: 1.5rem solid #1393b2;
           border-top: 0.7rem solid transparent;
           border-bottom: 0.7rem solid transparent; }
+
+footer {
+  height: 6rem;
+  background-color: rgba(41, 189, 224, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  footer .end_btn, footer .log_btn {
+    width: 36%;
+    height: 3.6rem;
+    background-color: #fab344;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px; }
