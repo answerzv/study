@@ -42,3 +42,90 @@ input {
   .nav .nav__title {
     color: #fff;
     font-size: 15px; }
+
+body {
+  background-color: #f0f0f0; }
+
+.main {
+  width: 93%;
+  margin: 0.8rem auto; }
+  .main .main__day {
+    background-color: #fff;
+    height: 4rem;
+    margin: 0.9rem auto;
+    border: 1px solid #B2AFBF; }
+  .main .main__triangle {
+    position: absolute;
+    top: 8.34rem;
+    left: 50%;
+    margin-left: -1.3rem;
+    border-bottom: 1.8rem solid #FFFFFF;
+    border-left: 1.3rem solid transparent;
+    border-right: 1.3rem solid transparent; }
+  .main .main__option {
+    height: 22rem;
+    background-color: #fff;
+    border: 1px solid #B2AFBF;
+    display: flex;
+    padding-top: 3rem; }
+    .main .main__option .content_day {
+      width: 10%;
+      height: auto;
+      margin-left: 7%;
+      position: relative; }
+      .main .main__option .content_day .content_day__line {
+        width: 0.15rem;
+        background-color: #c9c9c9;
+        height: 18.4rem;
+        margin-left: 1.5rem; }
+      .main .main__option .content_day .content_day__moon, .main .main__option .content_day .content_day__sun {
+        width: 2.8rem;
+        height: 2.8rem;
+        position: absolute;
+        top: 0;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        border: 1.8px solid #c9c9c9;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main .main__option .content_day .content_day__moon div, .main .main__option .content_day .content_day__sun div {
+          background-image: url("../a-images/img.png");
+          background-repeat: no-repeat;
+          background-size: 172px 549px;
+          height: 18px;
+          width: 14px;
+          background-position: 0 -27px; }
+      .main .main__option .content_day .content_day__sun {
+        top: 5rem; }
+        .main .main__option .content_day .content_day__sun div {
+          background-image: url("../a-images/img.png");
+          background-repeat: no-repeat;
+          background-size: 172px 549px;
+          height: 18px;
+          width: 18px;
+          background-position: 0 -78px; }
+    .main .main__option .content_option {
+      width: 80%;
+      height: auto;
+      background-color: #fff;
+      margin-right: 1.8rem; }
+      .main .main__option .content_option .content_option__kill, .main .main__option .content_option .content_option__ghost, .main .main__option .content_option .content_option__order, .main .main__option .content_option .content_option__whole {
+        width: auto;
+        height: 3.2rem;
+        background-color: #1393b2;
+        margin-left: 2.2rem;
+        margin-bottom: 1.8rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff; }
+        .main .main__option .content_option .content_option__kill .content_option__triangle, .main .main__option .content_option .content_option__ghost .content_option__triangle, .main .main__option .content_option .content_option__order .content_option__triangle, .main .main__option .content_option .content_option__whole .content_option__triangle {
+          position: absolute;
+          left: -1.4rem;
+          top: 0.9rem;
+          border-right: 1.5rem solid #1393b2;
+          border-top: 0.7rem solid transparent;
+          border-bottom: 0.7rem solid transparent; }

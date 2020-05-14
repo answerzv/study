@@ -3,3 +3,121 @@ $type:start_menu;  //页头导航条
 
 @import "../../style_package/init";
 @import "../../style_package/nav";
+
+body{
+    background-color: #f0f0f0;
+}
+
+.main{
+    width: 93%;
+    margin: 0.8rem auto;
+   .main__day{
+      background-color: #fff;
+      height: 4rem;
+      margin: 0.9rem auto;
+      border: 1px solid #B2AFBF;
+   }
+   .main__triangle{
+      position: absolute;
+      top: 8.34rem;
+      left: 50%;
+      margin-left: -1.3rem;
+      border-bottom: 1.8rem solid #FFFFFF;
+      border-left: 1.3rem solid transparent;
+      border-right: 1.3rem solid transparent;
+   }
+
+    .main__option{
+        height: 22rem;
+        background-color: #fff;
+        border: 1px solid #B2AFBF;
+        display:flex;
+        padding-top: 3rem;
+        .content_day{
+            width: 10%;
+            height: auto;
+            margin-left: 7%;
+            position: relative;
+            .content_day__line{
+                width: 0.15rem;
+                background-color: #c9c9c9;
+                height: 18.4rem;
+                margin-left: 1.5rem;
+            }
+            .content_day__moon{
+                width: 2.8rem;
+                height: 2.8rem;
+                position: absolute;
+                top: 0;
+                margin-right: 0.5rem;
+                border-radius: 50%;
+                border: 1.8px solid #c9c9c9;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               div{
+                   background-image: url("../a-images/img.png");
+                   background-repeat: no-repeat;
+                   background-size: 172px 549px;
+                   height:18px;
+                   width:14px;
+                   background-position:0 -27px;
+                   
+               }
+            }
+            .content_day__sun{
+                @extend .content_day__moon;
+                top: 5rem;
+                div{
+                   background-image: url("../a-images/img.png");
+                   background-repeat: no-repeat;
+                   background-size: 172px 549px;
+                   height:18px;
+                   width:18px;
+                   background-position:0 -78px;
+                   
+                }
+            }
+        }
+        .content_option{
+            width: 80%;
+            height: auto;
+            background-color: #fff;
+            margin-right: 1.8rem;
+         
+            .content_option__kill{
+                width: auto;
+                height: 3.2rem;
+                background-color: #1393b2;
+                margin-left: 2.2rem;
+                margin-bottom: 1.8rem;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                .content_option__triangle{
+                    position: absolute;
+                    left: -1.4rem;
+                    top: 0.9rem;
+                    border-right: 1.5rem solid #1393b2;
+                    border-top: 0.7rem solid transparent;
+                    border-bottom: 0.7rem solid transparent;
+                }
+            }
+            .content_option__ghost{
+                @extend .content_option__kill;
+            }
+            .content_option__order{
+                @extend .content_option__kill;
+            }
+            .content_option__whole{
+                @extend .content_option__kill;
+            }
+            
+        }
+
+    }
+    
+}
