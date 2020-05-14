@@ -1,54 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 12px;;
-    
-}
+@charset "UTF-8";
+$type:set_game;  //页头导航条
 
-input{
-    border: 0;
-    outline: none;
-    width: 20px;
-    margin:0 6px;
-    padding-top: 0.4rem;
-    font-size: 13.5px;
-}
+@import "../../style_package/init";
+@import "../../style_package/nav";
+@import "../../style_package/button";
 
-body{
-    background-color: #f0f0f0
-}
-
-.nav{
-    width: 100%;
-    height: 3.7rem;
-    background-color: #1393b2;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    .nav__img1{
-        background-image: url("./images/house.png");
-        background-repeat: no-repeat;
-        background-position: left;
-        width: 24px;
-        height: 38px;
-        background-size: 14px 23px;
-        margin-left: 0.5rem;
-    }
-    .nav__img2{
-        @extend .nav__img1;
-        background-image: url("./images/about.png");
-        background-position: right;
-        background-size: 25px 25px;
-        margin-right: 0.5rem;
-        margin-left: 0;
-        padding-left: 0.5rem;
-    }
-    .nav__title{
-        color:#fff;
-        font-size: 15px;
-    }
-}
 
 .content{
     width: 93%;
@@ -86,7 +42,8 @@ body{
                 display: flex;
                 align-items: center;
                 p{
-                    font-size: 1.3rem;
+                    font-size: 12px;
+                    width: 10rem;
                 }
                 input{
                     width: 70%;
@@ -99,6 +56,7 @@ body{
         height: 10rem;
         background-color: #fff;
         padding: 1rem;
+        margin-bottom: 2rem;
         span{
             color: #FBB435;
         }
@@ -127,28 +85,16 @@ body{
             outline: none;
         }
         .slider-btnReduce{
-            @extend .slider-btnPlus
+            @extend .slider-btnPlus;
         }
         
     }
 
-    .button{
-        margin-top: 1.4rem;
-        background-color: #FBB435;
-        height: 4.35rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        letter-spacing: 1.85px;
-        font-size: 15px;
-    }
-
-    
+  
     
 }
 
-//滑条
+// 滑条
 input[type=range] {
     padding-top: 0;
     margin: 0 18px;

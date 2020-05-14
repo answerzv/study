@@ -1,35 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 12px;;
-    
-}
+@charset "UTF-8";
+$type:home;  //页头导航条
 
-body{
-    background-color: #f0f0f0
-}
+@import "../../style_package/init";  
+@import "../../style_package/nav";
 
-.nav{
-    width: 100%;
-    height: 3.7rem;
-    background-color: #1393b2;
-    display: flex;
-    align-items: center;
-
-    .btnMain{
-        margin-left: 0.45rem;
-        
-       .btnMain__box{
-           width: 2.5rem;
-           height: 0.26rem;
-           background: wheat;
-           margin-left: 0.45rem;
-           margin-top: 0.4rem;
-        }
-    }
-    
-}
 
 .main{
     background-color: #f0f0f0;

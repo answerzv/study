@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .button{
+      width: 79%;
+      height: 3.6rem;
+      background-color: #fab344;
+      font-size: 15px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}

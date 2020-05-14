@@ -6,8 +6,8 @@ revert[0].onclick = function(){
 var set_civil = document.getElementById("vle_civil");
 var set_ghost = document.getElementById("vle_ghost");
 
-console.log(set_civil)
-console.log(set_ghost)
+// console.log(set_civil)
+// console.log(set_ghost)
 var set_slider = document.getElementById("processRange");
 var sum = document.getElementById('sum');
 

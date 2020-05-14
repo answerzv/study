@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+.nav{
+    width: 100%;
+    height: 3.7rem;
+    background-color: #1393b2;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    //源代码
+    .nav__img1{
+        // background-image: url("");
+        background-repeat: no-repeat;
+        // background-position: left;
+        // width: 24px;
+        // height: 38px;
+        background-size: 175px 546px; //图片大小
+        margin-left: 0.7rem;
+    }
+    .nav__img2{
+        @extend .nav__img1;
+        // background-image: url("");
+        // background-position: right;
+        margin-right: 0.7rem;
+        margin-left: 0;
+        
+    }
+   
+        @if $type == home {
+            .btnMain{
+                margin-left: 0.45rem;
+                
+               .btnMain__box{
+                   width: 2.5rem;
+                   height: 0.26rem;
+                   background: wheat;
+                   margin-left: 0.45rem;
+                   margin-top: 0.4rem;
+                }
+            }
+        } @else if $type == set_game {
+            .nav__img1{
+                @extend .nav__img1;
+                background-image: url("../a-images/img.png");
+                width: 25px;          // 两个图标的宽度取最大值相等，确保标题居中
+                height: 20px;
+                background-position: 0 -7px;
+                
+                
+            }
+            .nav__img2{
+                @extend .nav__img2;
+                background-image: url("../a-images/img.png");
+                height:25px;
+                width:25px;
+                background-position:0 -136px;
+            }
+        }@else if $type == set_identity{
+            .nav__img1{
+                @extend .nav__img1;
+                background-image: url("../a-images/img.png");
+                width: 18px;       
+                height: 20px;
+                background-position: 0 -7px;
+            }
+            .nav__img2{
+                @extend .nav__img2;
+                background-image: url("../a-images/img.png");
+                height:18px;
+                width:18px;
+                background-position:0 -60px;
+            }
+       }@else if $type == start_diary{
+           .nav__img1{
+            @extend .nav__img1;
+               background-image: url("../a-images/img.png");
+               width: 18px;       
+               height: 20px;
+               background-position: 0 -7px;
+            }
+            .nav__img2{
+               @extend .nav__img1;
+               background-image: url("../a-images/img.png");
+               width: 18px;       
+               height: 18px;
+               background-position: 0 -60px;
+            }
+       }@else if $type == start_menu{
+        .nav__img1{
+            @extend .nav__img1;
+               background-image: url("../a-images/img.png");
+               height:20px;
+               width:19px;
+               background-position:0 -96px;;
+            }
+            .nav__img2{
+               @extend .nav__img1;
+               background-image: url("../a-images/img.png");
+               width: 18px;       
+               height: 18px;
+               background-position: 0 -60px;
+            }
+       }
+       
+    .nav__title{
+        color:#fff;
+        font-size: 15px;
+    }
+}

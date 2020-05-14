@@ -1,0 +1,47 @@
+@charset "UTF-8";
+$type:start_diary;  //页头导航条
+
+@import "../../style_package/init";
+@import "../../style_package/nav";
+@import "../../style_package/button";
+
+body{
+    background-color: #1393b2;
+}
+
+header{
+    border-bottom: 0.8px solid #f0f0f0;
+}
+
+#main{
+    margin-top: 2.2rem;
+    .main_box{
+        width: 25vw;
+        height: 25vw;
+        border: 1.5px solid #fff;
+        margin: 3.62vw;
+        float: left;
+        .box_text{
+            height: 80%;
+            background-color:#F5C96B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box_num{
+            height: 20%;
+            background-color:#83B098;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+     }
+}
+
+footer{
+    margin-top: 47rem;
+    height: 8rem;
+    z-index: 999;
+}
+

@@ -5,6 +5,9 @@
   list-style: none;
   font-size: 12px; }
 
+body {
+  background-color: #f0f0f0; }
+
 input {
   border: 0;
   outline: none;
@@ -13,9 +16,6 @@ input {
   padding-top: 0.4rem;
   font-size: 13.5px; }
 
-body {
-  background-color: #f0f0f0; }
-
 .nav {
   width: 100%;
   height: 3.7rem;
@@ -23,24 +23,40 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .nav .nav__img1, .nav .nav__img2 {
-    background-image: url("./images/house.png");
+  .nav .nav__img2, .nav .nav__img1 {
     background-repeat: no-repeat;
-    background-position: left;
-    width: 24px;
-    height: 38px;
-    background-size: 14px 23px;
-    margin-left: 0.5rem; }
+    background-size: 175px 546px;
+    margin-left: 0.7rem; }
   .nav .nav__img2 {
-    background-image: url("./images/about.png");
-    background-position: right;
-    background-size: 25px 25px;
-    margin-right: 0.5rem;
-    margin-left: 0;
-    padding-left: 0.5rem; }
+    margin-right: 0.7rem;
+    margin-left: 0; }
+  .nav .nav__img2, .nav .nav__img1 {
+    background-image: url("../a-images/img.png");
+    width: 25px;
+    height: 20px;
+    background-position: 0 -7px; }
+  .nav .nav__img2 {
+    background-image: url("../a-images/img.png");
+    height: 25px;
+    width: 25px;
+    background-position: 0 -136px; }
   .nav .nav__title {
     color: #fff;
     font-size: 15px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .button {
+    width: 79%;
+    height: 3.6rem;
+    background-color: #fab344;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .content {
   width: 93%;
@@ -76,14 +92,16 @@ body {
         display: flex;
         align-items: center; }
         .content .conten__input .inputMain .inputMain__role p {
-          font-size: 1.3rem; }
+          font-size: 12px;
+          width: 10rem; }
         .content .conten__input .inputMain .inputMain__role input {
           width: 70%;
           height: 2.2rem; }
   .content .conten__amount {
     height: 10rem;
     background-color: #fff;
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 2rem; }
     .content .conten__amount span {
       color: #FBB435; }
     .content .conten__amount .slider {
@@ -107,16 +125,6 @@ body {
       cursor: pointer;
       border: 0;
       outline: none; }
-  .content .button {
-    margin-top: 1.4rem;
-    background-color: #FBB435;
-    height: 4.35rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    letter-spacing: 1.85px;
-    font-size: 15px; }
 
 input[type=range] {
   padding-top: 0;
