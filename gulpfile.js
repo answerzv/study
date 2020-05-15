@@ -50,6 +50,12 @@ var imagemin = require('gulp-imagemin')
            .pipe(gulp.dest('game/style_css/start_menu'))
   })
 
+  gulp.task('scssstart_murder',function(){
+    return gulp.src('game/set_3/start_murder/index.scss')
+           .pipe(scss())
+           .pipe(gulp.dest('game/style_css/start_murder'))
+  })
+
 // 压缩图片
 gulp.task('imagemin',function(){
     return gulp.src('game/style_css/a-images/*.{png,jpg,gif,ico}')

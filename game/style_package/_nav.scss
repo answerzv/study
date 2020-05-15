@@ -8,6 +8,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    line-height: 3.7rem;
     //源代码
     .nav__img1{
         // background-image: url("");
@@ -90,8 +91,23 @@
             @extend .nav__img1;
                background-image: url("../a-images/img.png");
                height:20px;
-               width:19px;
-               background-position:0 -96px;;
+               width:18px;
+               background-position:0 -96px;
+            }
+            .nav__img2{
+               @extend .nav__img1;
+               background-image: url("../a-images/img.png");
+               width: 18px;       
+               height: 18px;
+               background-position: 0 -60px;
+            }
+       }@else if $type == start_murder{
+            .nav__img1{
+               @extend .nav__img1;
+               background-image: none;
+               height:20px;
+               width:18px;
+               background-position:0 -96px;
             }
             .nav__img2{
                @extend .nav__img1;
@@ -101,6 +117,7 @@
                background-position: 0 -60px;
             }
        }
+    
        
     .nav__title{
         color:#fff;

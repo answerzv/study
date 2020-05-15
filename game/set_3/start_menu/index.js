@@ -1,7 +1,6 @@
 
 
 
-
 let main_day = document.getElementsByClassName('main__day');
 var main_option = document.getElementsByClassName('main__option');
 var main_triangle = document.getElementsByClassName('main__triangle')
@@ -22,3 +21,22 @@ main_day[0].onclick = function(){
 
    }  
 }
+
+
+var data = sessionStorage.getItem("data_set");
+var main = document.getElementById('main');
+
+var str = data;
+var str_convert = str.split(",");
+console.log(str_convert);
+
+sessionStorage.setItem("data", str_convert);
+let kill = document.getElementsByClassName('content_option__kill');
+kill[0].onclick = function(){
+    location.href = "../start_murder/index.html"
+    
+}
+
+
+
+

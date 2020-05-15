@@ -1,0 +1,99 @@
+@charset "UTF-8";
+$type:start_murder;  //页头导航条
+
+@import "../../style_package/init";
+@import "../../style_package/nav";
+@import "../../style_package/button";
+
+
+body{
+    background-color: #1393b2;
+    line-height: 21rem;
+}
+
+header {
+    border-bottom: 0.8px solid #f0f0f0;
+}
+
+nav{
+    margin-top: 1.5rem;
+    .nav_box{
+        line-height: 4rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding-left: 2rem;
+    } 
+    .triangle{
+        width: 0;
+        height: 0;
+        border-top: 10px solid rgba(255, 255, 255, 0.5);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin-left: 2rem;
+    } 
+    .text{
+        line-height: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+#main{
+    margin-top: 0.2rem;
+    .main_box{
+        width: 25vw;
+        height: 25vw;
+        border: 1.5px solid #fff;
+        margin: 3.62vw;
+        float: left;
+        background-color:#F5C96B;
+        .box_txt{
+            height: 20vw;
+            background-color:#F5C96B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 20vw;
+        }
+        .box_num{
+            height: 5vw;
+            background-color:#83B098;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            line-height: 5vw;
+        }
+        .box_img{
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               margin-top: 1.2vw;
+               visibility:hidden;
+            .box_span{
+                margin-top: 0.3vw;
+                width: 5vw;
+                height: 5vw;
+                background-color: red;
+                // display: none;
+                
+        
+            }
+            
+        }
+     }
+}
+
+footer{
+    margin-top: 47rem;
+    height: 8rem;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1393b2;
+}
+
+
+
+
+

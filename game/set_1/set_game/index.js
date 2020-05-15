@@ -151,7 +151,7 @@ function start() {
 
     var main = civilian.concat(specter);
     shuffle(main)
-    
+  
 }
 
 

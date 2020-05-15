@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px; }
+
+body {
+  background-color: #f0f0f0; }
+
+input {
+  border: 0;
+  outline: none;
+  width: 20px;
+  margin: 0 6px;
+  padding-top: 0.4rem;
+  font-size: 13.5px; }
+
+.nav {
+  width: 100%;
+  height: 3.7rem;
+  background-color: #1393b2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3.7rem; }
+  .nav .nav__img2, .nav .nav__img1 {
+    background-repeat: no-repeat;
+    background-size: 175px 546px;
+    margin-left: 0.7rem; }
+  .nav .nav__img2 {
+    margin-right: 0.7rem;
+    margin-left: 0; }
+  .nav .nav__img2, .nav .nav__img1 {
+    background-image: none;
+    height: 20px;
+    width: 18px;
+    background-position: 0 -96px; }
+  .nav .nav__img2 {
+    background-image: url("../a-images/img.png");
+    width: 18px;
+    height: 18px;
+    background-position: 0 -60px; }
+  .nav .nav__title {
+    color: #fff;
+    font-size: 15px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .button {
+    width: 79%;
+    height: 3.6rem;
+    background-color: #fab344;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+body {
+  background-color: #1393b2;
+  line-height: 21rem; }
+
+header {
+  border-bottom: 0.8px solid #f0f0f0; }
+
+nav {
+  margin-top: 1.5rem; }
+  nav .nav_box {
+    line-height: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 2rem; }
+  nav .triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgba(255, 255, 255, 0.5);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 2rem; }
+  nav .text {
+    line-height: 2rem;
+    margin-left: 2rem; }
+
+#main {
+  margin-top: 0.2rem; }
+  #main .main_box {
+    width: 25vw;
+    height: 25vw;
+    border: 1.5px solid #fff;
+    margin: 3.62vw;
+    float: left;
+    background-color: #F5C96B; }
+    #main .main_box .box_txt {
+      height: 20vw;
+      background-color: #F5C96B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 20vw; }
+    #main .main_box .box_num {
+      height: 5vw;
+      background-color: #83B098;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      line-height: 5vw; }
+    #main .main_box .box_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1.2vw;
+      visibility: hidden; }
+      #main .main_box .box_img .box_span {
+        margin-top: 0.3vw;
+        width: 5vw;
+        height: 5vw;
+        background-color: red; }
+
+footer {
+  margin-top: 47rem;
+  height: 8rem;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1393b2; }
