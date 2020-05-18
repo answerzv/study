@@ -121,6 +121,10 @@ body{
                 .content_option__whole{
                     @extend .content_option__kill;
                 }
+                .newelem{
+                    margin-bottom:1rem;
+                    text-align: center;
+                }
                 
             }
         }
