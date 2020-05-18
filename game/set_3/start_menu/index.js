@@ -32,9 +32,18 @@ var str = data;
 let kill = document.getElementsByClassName('content_option__kill');
 kill[0].onclick = function(){
     location.href = "../start_murder/index.html"
-    
+
 }
 
+var death_role = JSON.parse(sessionStorage.getItem('death_role'))
+console.log(death_role);
 
 
+var option__kill = document.getElementsByClassName('content_option__kill')
+var option__triangle = document.getElementsByClassName('content_option__triangle')
 
+if(death_role !== null){
+     console.log('z')
+     option__kill[0].style.backgroundColor = '#8dae9b'
+     option__triangle[0].style.borderRight = '1.5rem solid #8dae9b'
+}
