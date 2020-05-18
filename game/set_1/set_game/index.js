@@ -177,4 +177,4 @@ button[0].onclick =function() {
     window.location.href = "../../set_2/set_identity/index.html"
 }
 
-
+sessionStorage.removeItem('death_role')

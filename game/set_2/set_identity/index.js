@@ -87,3 +87,4 @@ function pack(){
   
 }
 
+sessionStorage.removeItem('death_role')

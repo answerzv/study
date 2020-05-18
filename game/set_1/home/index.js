@@ -123,7 +123,7 @@ contentBtn_1[i].onclick =function(){
 
 
 
-
+sessionStorage.removeItem('death_role')
 
 
 

@@ -1,4 +1,7 @@
-
+var revert = document.getElementsByClassName('nav__img1');
+revert[0].onclick = function(){
+    window.location.href = '../../set_2/start_diary/index.html';
+};
 
 
 let main_day = document.getElementsByClassName('main__day');
@@ -29,18 +32,15 @@ var main = document.getElementById('main');
 var str = data;
 
 
-let kill = document.getElementsByClassName('content_option__kill');
-kill[0].onclick = function(){
-    location.href = "../start_murder/index.html"
+var option_kill = document.getElementsByClassName('content_option__kill')
 
-}
 
 var death_role = JSON.parse(sessionStorage.getItem('death_role'))
 console.log(death_role);
 
 
 
-var option_kill = document.getElementsByClassName('content_option__kill')
+
 var option_triangle = document.getElementsByClassName('content_option__triangle')
 
 var option_ghost = document.getElementById('ghost');
@@ -60,3 +60,14 @@ if(death_role !== null){
      option_kill[0].style.marginBottom = '1rem'
      day_sun[0].style.top ='6.7rem'
 }
+
+
+option_kill[0].onclick = function(){
+         
+     if(death_role !== null){
+          alert('请进行下一项活动')
+     }else{
+          location.href = "../start_murder/index.html"
+     }
+         
+  }

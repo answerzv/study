@@ -61,6 +61,8 @@ function playerObj() {
 }
 playerObj();
 
+sessionStorage.removeItem('death_role')
+
 
 
 
