@@ -1,11 +1,11 @@
-var data = sessionStorage.getItem("data_set");
+var data = JSON.parse(sessionStorage.getItem("data_set"));
 
-var str = data;
-var murder_data = str.split(",");
+// var str = data;
+// var murder_data = str.split(",");
+var murder_data = data;
 console.log(murder_data);
 
 var m = murder_data.length;
-
 var main = document.getElementById('main');
 
 
@@ -34,8 +34,7 @@ window.onload = function(){
         box(j);
           box_gtxt[j].innerText =`${murder_data[j]}`;
           box_gnum[j].innerHTML = `${j+1}`+'号';
-    
-    
+         
      };
      c_btn()
 }
@@ -43,19 +42,34 @@ window.onload = function(){
 
 var box_gspan = document.getElementsByClassName('box_span')
 
+var index = 0;
 function c_btn(){
-    for(let j = 0 ; j<m; j++){
-        this.box_gcontent[j].onclick =function(){
-            o++
-        
-         box_gspan[j].style.visibility = 'visible'
-         
 
-            console.log(o)
-            console.log(j)
+    // function i_change(target){  
+    //     for(var i = 0; i < m; i++){
+    //        box_gcontent[j].classList.remove('bg')
+    //         // console.log(i)      
+    //     }
+    //         target.classList.add('bg')
+    // }
+    // 这个方法只能实现点击本元素触发 本元素的内容
+    // for(var j = 0 ; j<m; j++){
+        //     box_gcontent[j].addEventListener('click',function(e){       
+        //             console.log(j)
+        //             i_change(e.currentTarget);    
+        //      })   
+    // }
+
+    for(var j = 0 ; j<m; j++){
+         box_gcontent[j].onclick = function(){
+            index++;
+            $('.box_span').hide();              //jq实现
+            $(this).find('.box_span').show();
         }
     }
+   
 }
+
 
 var box_gImg = document.getElementsByClassName('box_img');
 
@@ -83,8 +97,23 @@ function box(i){
         box_gcontent[i].appendChild(arr_num[i])
         box_gcontent[i].appendChild(arr_img[i])
         box_gImg[i].appendChild(arr_span[i])
-     
+
 }
+
+var button = document.getElementsByClassName('button');
+
+button[0].onclick = function(){
+    if(index !== 0){
+        location.href = '../start_menu/index.html'
+    }else{
+        alert('请选择要操作的玩家')
+    }
+   
+}
+
+var player= JSON.parse(sessionStorage.getItem('player'));
+console.log(player)
+
 
 
 

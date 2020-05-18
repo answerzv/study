@@ -9,6 +9,7 @@ $type:start_murder;  //页头导航条
 body{
     background-color: #1393b2;
     line-height: 21rem;
+    margin-bottom: 66rem;
 }
 
 header {
@@ -38,6 +39,7 @@ nav{
 
 #main{
     margin-top: 0.2rem;
+    height: 36vw;
     .main_box{
         width: 25vw;
         height: 25vw;
@@ -47,7 +49,7 @@ nav{
         background-color:#F5C96B;
         .box_txt{
             height: 20vw;
-            background-color:#F5C96B;
+            // background-color:#F5C96B;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -67,15 +69,15 @@ nav{
                display: flex;
                justify-content: center;
                margin-top: 1.2vw;
-               visibility:hidden;
+            
             .box_span{
+                background-image: url("../a-images/img.png");
                 margin-top: 0.3vw;
-                width: 5vw;
-                height: 5vw;
-                background-color: red;
-                // display: none;
-                
-        
+                background-size:175px 546px;
+                height:15px;
+                width:15px;
+                background-position:0 -45px;
+                display: none;
             }
             
         }
@@ -92,6 +94,7 @@ footer{
     bottom: 0;
     background-color: #1393b2;
 }
+
 
 
 

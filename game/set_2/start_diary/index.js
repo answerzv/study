@@ -10,9 +10,12 @@ button[0].onclick = function(){
 var data = sessionStorage.getItem("data_set");
 var main = document.getElementById('main');
 
-var str = data;
-var str_convert = str.split(",");
-console.log(str_convert);
+// var str = data;
+// var str_convert = str.split(",");
+console.log(data,'未转换之前')
+
+var str_convert = JSON.parse(data)
+console.log(str_convert,'转换之后');
 
 var arr= [];
 var arr_box = [];
@@ -44,6 +47,19 @@ for(let i=0; i< arr_box.length; i++){
     box_content[i].appendChild(arr_text[i])
     box_content[i].appendChild(arr_num[i])
 }
+
+
+function playerObj() {
+    var player=[];
+    for (let i=0; i < str_convert.length ;i++){
+        player.push({name:str_convert[i],num:(i+1),class:"label",cause:"none",
+            deathDay:""});
+    }
+    sessionStorage.setItem('player',JSON.stringify(player));
+   
+
+}
+playerObj();
 
 
 

@@ -3,10 +3,11 @@ revert[0].onclick = function(){
     window.location.href = '../../set_1/set_game/index.html';
 };
 
-var data = sessionStorage.getItem("data_set");
+var data = JSON.parse(sessionStorage.getItem("data_set"));
 
-var str = data;
-var str_convert = str.split(",");
+// var str = data;
+// var str_convert = str.split(",");
+var str_convert = data;
 console.log(str_convert)
 
 var arr = [];
@@ -79,11 +80,7 @@ function pack(){
             };
 
             //if(button[0].firstChild.nodeValue ==法官查看){
-            // }
-              
-               
-            
-            
+            // }   
         };
 
     };

@@ -167,7 +167,7 @@ function shuffle(i) {
     }
 
     console.log(main_chaos)
-    sessionStorage.setItem("data_set", main_chaos);
+    sessionStorage.setItem("data_set", JSON.stringify(main_chaos));
      return;
 }
 
