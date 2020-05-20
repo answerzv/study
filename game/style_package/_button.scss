@@ -4,6 +4,7 @@ footer{
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: 99;
    .button{
       width: 79%;
       height: 3.6rem;

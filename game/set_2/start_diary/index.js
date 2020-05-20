@@ -53,15 +53,16 @@ function playerObj() {
     var player=[];
     for (let i=0; i < str_convert.length ;i++){
         player.push({name:str_convert[i],num:(i+1),class:"label",cause:"none",
-            deathDay:""});
+            deathDay:"",victory:''});
     }
     sessionStorage.setItem('player',JSON.stringify(player));
-   
+   sessionStorage.setItem('start','start_kill');
 
 }
 playerObj();
 
 sessionStorage.removeItem('death_role')
+sessionStorage.removeItem('menu_role')
 
 
 

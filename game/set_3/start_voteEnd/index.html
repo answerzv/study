@@ -19,9 +19,11 @@
         <div class="col">c5</div>
         </div>
         <script>
+            var cols = document.getElementsByClassName('col'); // 全部的类元素
+            window.onload = function(){
         // document.addEventListener('DOMContentLoaded', function() {
         // var cols = document.querySelector('.cell').querySelectorAll('.col');
-           var cols = document.getElementsByClassName('col'); // 全部的类元素
+           
             function changeBackground(target) {
                  for (var i = 0; i < cols.length; i++) {
                      cols[i].classList.remove('bg');
@@ -37,6 +39,13 @@
                     });
                 }
         // });
+
+    }
+       
+           var i =3 
+            cols[i].style.backgroundColor = 'red'
+        
+
         </script>
 </body>
 </html>

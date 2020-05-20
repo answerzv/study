@@ -49,7 +49,8 @@ body {
 
 .main {
   width: 93%;
-  margin: 0.8rem auto; }
+  margin: 0.8rem auto;
+  position: relative; }
   .main .main__day {
     background-color: #fff;
     height: 4rem;
@@ -61,7 +62,7 @@ body {
     color: #29bde0; }
   .main .main__triangle {
     position: absolute;
-    top: 8.34rem;
+    top: 3.5rem;
     left: 50%;
     margin-left: -1.3rem;
     border-bottom: 1.8rem solid #FFFFFF;
@@ -129,7 +130,7 @@ body {
           justify-content: center;
           align-items: center;
           color: #fff; }
-          .main .main__option .content .content_option .content_option__kill .content_option__triangle, .main .main__option .content .content_option .content_option__ghost .content_option__triangle, .main .main__option .content .content_option .content_option__order .content_option__triangle, .main .main__option .content .content_option .content_option__whole .content_option__triangle {
+          .main .main__option .content .content_option .content_option__kill .content_option__triangle1, .main .main__option .content .content_option .content_option__ghost .content_option__triangle1, .main .main__option .content .content_option .content_option__order .content_option__triangle1, .main .main__option .content .content_option .content_option__whole .content_option__triangle1, .main .main__option .content .content_option .content_option__kill .content_option__triangle2, .main .main__option .content .content_option .content_option__ghost .content_option__triangle2, .main .main__option .content .content_option .content_option__order .content_option__triangle2, .main .main__option .content .content_option .content_option__whole .content_option__triangle2, .main .main__option .content .content_option .content_option__kill .content_option__triangle3, .main .main__option .content .content_option .content_option__ghost .content_option__triangle3, .main .main__option .content .content_option .content_option__order .content_option__triangle3, .main .main__option .content .content_option .content_option__whole .content_option__triangle3, .main .main__option .content .content_option .content_option__kill .content_option__triangle4, .main .main__option .content .content_option .content_option__ghost .content_option__triangle4, .main .main__option .content .content_option .content_option__order .content_option__triangle4, .main .main__option .content .content_option .content_option__whole .content_option__triangle4 {
             position: absolute;
             left: -1.4rem;
             top: 0.9rem;
@@ -149,7 +150,8 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  z-index: 99; }
   footer .end_btn, footer .log_btn {
     width: 36%;
     height: 3.6rem;

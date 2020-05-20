@@ -11,6 +11,7 @@ body{
 .main{
     width: 93%;
     margin: 0.8rem auto;
+    position: relative;
    .main__day{
       background-color: #fff;
       height: 4rem;
@@ -23,7 +24,7 @@ body{
    }
    .main__triangle{
       position: absolute;
-      top: 8.34rem;
+      top: 3.5rem;
       left: 50%;
       margin-left: -1.3rem;
       border-bottom: 1.8rem solid #FFFFFF;
@@ -103,13 +104,22 @@ body{
                     justify-content: center;
                     align-items: center;
                     color: #fff;
-                    .content_option__triangle{
+                    .content_option__triangle1{
                         position: absolute;
                         left: -1.4rem;
                         top: 0.9rem;
                         border-right: 1.5rem solid #1393b2;
                         border-top: 0.7rem solid transparent;
                         border-bottom: 0.7rem solid transparent;
+                    }
+                    .content_option__triangle2{
+                        @extend .content_option__triangle1;
+                    }
+                    .content_option__triangle3{
+                        @extend .content_option__triangle1;
+                    }
+                    .content_option__triangle4{
+                        @extend .content_option__triangle1;
                     }
                 }
                 .content_option__ghost{
@@ -144,6 +154,8 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 99;
+    
    .end_btn{
        width: 36%;
        height: 3.6rem;

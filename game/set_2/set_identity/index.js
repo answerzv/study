@@ -88,3 +88,4 @@ function pack(){
 }
 
 sessionStorage.removeItem('death_role')
+sessionStorage.removeItem('menu_role')

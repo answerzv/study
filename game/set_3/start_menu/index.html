@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../style_css/start_menu/index.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src='./state-machine.js'></script>
 </head>
 <body>
     <header>
@@ -14,35 +16,39 @@
             <li class="nav__img2"></li>
         </ul>
     </header>
-    <main>
-        <div class="main">
+    <div class="main_clone">
+        <div id="k" class="main" >
             <div class="main__day">第一天</div>
-            <div class="main__triangle"></div>
-            <div class="main__option">
-                <div class="content">
-                    <div class="content_day">
-                        <div class="content_day__line"></div>
-                        <div class="content_day__moon"><div></div></div>
-                        <div class="content_day__sun"><div></div></div>
-                    </div>
-                    <div class="content_option">
-                        <div class="content_option__kill">杀手杀人
-                            <span class="content_option__triangle"></span>
+            <div class="content-m">
+                <div class="main__triangle"></div>
+                <div class="main__option">
+                    <div class="content">
+                        <div class="content_day">
+                            <div class="content_day__line"></div>
+                            <div class="content_day__moon"><div></div></div>
+                            <div class="content_day__sun"><div></div></div>
                         </div>
-                        <div class="content_option__ghost" id="ghost">亡灵发表遗言
-                            <span class="content_option__triangle"></span>
-                        </div>
-                        <div class="content_option__order">玩家依次发言
-                            <span class="content_option__triangle"></span>
-                        </div>
-                        <div class="content_option__whole">全民投票
-                            <span class="content_option__triangle"></span>
+                        <div class="content_option">
+                            <div class="content_option__kill kill">杀手杀人
+                                <span class="content_option__triangle1"></span>
+                            </div>
+                            <div class="content_option__ghost ghost" id="ghost">亡灵发表遗言
+                                <span class="content_option__triangle2"></span>
+                            </div>
+                            <div class="content_option__order speak">玩家依次发言
+                                <span class="content_option__triangle3"></span>
+                            </div>
+                            <div class="content_option__whole vote">全民投票
+                                <span class="content_option__triangle4"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
         </div>
-    </main>
+    </div>
     <footer>
         <div class="end_btn">结束游戏</div>
         <div class="log_btn">法官日志</div>

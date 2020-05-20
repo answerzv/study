@@ -178,3 +178,4 @@ button[0].onclick =function() {
 }
 
 sessionStorage.removeItem('death_role')
+sessionStorage.removeItem('menu_role')

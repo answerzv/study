@@ -47,7 +47,8 @@ input {
 footer {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 99; }
   footer .button {
     width: 79%;
     height: 3.6rem;
